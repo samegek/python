@@ -1,0 +1,5 @@
+#!/bin/env py3
+
+with open('keyword.txt') as f:
+  want = input('what you want to say: ')
+  print(dict.fromkeys(f.readlines(), 'freedom').get(want+'\n', 'human right'))
